@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+
+		<!-- Configurações de Conexão com o banco de dados -->
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/drogaria</property>
+		<!--  <property name="connection.url">jdbc:mysql://127.0.0.1:3306/drogaria</property> -->
+		<property name="connection.username">root</property>
+		<property name="connection.password">sua_senha_aqui</property>
+
+		<!-- Pool de conexões -->
+		<property name="connection.pool_size">1</property>
+
+		<!-- Dialeto do Hibernate 
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>-->
+			
+
+		<!-- Gerenciamento do contexto das sessões -->
+		<property name="current_session_context_class">thread</property>
+
+		<!-- Cache de segundo nível -->
+		<property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+		
+		<!-- Mostrar SQL no console -->
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+
+		<!-- Mostrar as SQL geradas no console 
+		<property name="show_sql">true</property> -->
+
+		<!-- Atualização do schema - cria as tabelas do banco de dados -->
+		<property name="hbm2ddl.auto">create</property>
+		
+		<!-- Mapeamento das Entidades -->
+		<mapping class="br.pro.delfino.drogaria.domain.Estado" />
+
+	</session-factory>
+	
+</hibernate-configuration>

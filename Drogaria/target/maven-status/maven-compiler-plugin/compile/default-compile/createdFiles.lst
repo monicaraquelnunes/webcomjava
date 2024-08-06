@@ -1,0 +1,14 @@
+br\pro\delfino\drogaria\domain\Fabricante.class
+br\pro\delfino\drogaria\domain\Usuario.class
+br\pro\delfino\drogaria\domain\Estado.class
+br\pro\delfino\drogaria\domain\Funcionario.class
+br\pro\delfino\drogaria\domain\Venda.class
+br\pro\delfino\drogaria\util\HibernateUtil.class
+br\pro\delfino\drogaria\domain\Pessoa.class
+br\pro\delfino\drogaria\domain\Cliente.class
+br\pro\delfino\drogaria\domain\Produto.class
+br\pro\delfino\drogaria\dao\GenericDAO.class
+br\pro\delfino\drogaria\dao\EstadoDAO.class
+br\pro\delfino\drogaria\domain\GenericDomain.class
+br\pro\delfino\drogaria\domain\ItemVenda.class
+br\pro\delfino\drogaria\domain\Cidade.class
