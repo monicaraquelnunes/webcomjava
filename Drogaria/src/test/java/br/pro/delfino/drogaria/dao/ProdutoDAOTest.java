@@ -3,8 +3,8 @@ package br.pro.delfino.drogaria.dao;
 import java.math.BigDecimal;
 import java.util.List;
 
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
+import org.junit.Ignore;
+import org.junit.Test;
 
 import br.pro.delfino.drogaria.domain.Fabricante;
 import br.pro.delfino.drogaria.domain.Produto;
@@ -12,8 +12,7 @@ import br.pro.delfino.drogaria.domain.Produto;
 
 public class ProdutoDAOTest { //162 (DESAFIO): listar, buscar, editar, excluir
 	
-	@Disabled
-	@SuppressWarnings("removal")
+	@Ignore
 	@Test
 	public void salvar() {
 		FabricanteDAO fabricanteDAO = new FabricanteDAO();
@@ -31,7 +30,7 @@ public class ProdutoDAOTest { //162 (DESAFIO): listar, buscar, editar, excluir
 		System.out.println("Produto Salvo com Sucesso!");
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void listar() { //162 - desafio "listar" concluído
 		ProdutoDAO produtoDAO = new ProdutoDAO();
@@ -49,7 +48,7 @@ public class ProdutoDAOTest { //162 (DESAFIO): listar, buscar, editar, excluir
 		}
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void buscar() { //162 - desafio "buscar" concluído
 		Long codigo = 102L;
@@ -67,7 +66,7 @@ public class ProdutoDAOTest { //162 (DESAFIO): listar, buscar, editar, excluir
 		System.out.println("Quantidade:  " + produto.getQuantidade());	
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void editar() { //162 - desafio "editar" o produto concluído
 		Long codigoProduto = 1L;
@@ -109,7 +108,7 @@ public class ProdutoDAOTest { //162 (DESAFIO): listar, buscar, editar, excluir
 		
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void excluir() { //162 - desafio "excluir" o produto concluído
 		Long codigo = 1L;

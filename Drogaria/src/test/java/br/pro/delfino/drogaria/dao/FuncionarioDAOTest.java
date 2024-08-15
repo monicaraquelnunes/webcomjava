@@ -4,8 +4,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
+import org.junit.Ignore;
+import org.junit.Test;
 
 import br.pro.delfino.drogaria.domain.Funcionario;
 import br.pro.delfino.drogaria.domain.Pessoa;
@@ -13,7 +13,7 @@ import br.pro.delfino.drogaria.domain.Pessoa;
 
 
 public class FuncionarioDAOTest {
-	@Disabled
+	@Ignore
 	@Test
 	public void salvar() throws ParseException {
 		PessoaDAO pessoaDAO = new PessoaDAO();
@@ -30,7 +30,7 @@ public class FuncionarioDAOTest {
 		System.out.println("Funcionário Cadastrado com Sucesso!");
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void listar() {
 		FuncionarioDAO funcionarioDAO = new FuncionarioDAO();
@@ -43,7 +43,7 @@ public class FuncionarioDAOTest {
 		}	
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void buscar() {
 		Long codigo = 1L;
@@ -55,7 +55,7 @@ public class FuncionarioDAOTest {
 		System.out.println("Admissão: " + funcionario.getDataAdmissao());
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void excluir() {
 		Long codigo = 2L;

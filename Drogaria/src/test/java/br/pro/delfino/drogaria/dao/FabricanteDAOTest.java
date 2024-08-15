@@ -2,14 +2,14 @@ package br.pro.delfino.drogaria.dao;
 
 import java.util.List;
 
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
+import org.junit.Ignore;
+import org.junit.Test;
 
 import br.pro.delfino.drogaria.domain.Fabricante;
 
 public class FabricanteDAOTest {
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void salvar() {
 		Fabricante fabricante = new Fabricante();
@@ -19,7 +19,7 @@ public class FabricanteDAOTest {
 		fabricanteDAO.salvar(fabricante);
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void listar() {
 		FabricanteDAO FabricanteDAO = new FabricanteDAO();
@@ -32,7 +32,7 @@ public class FabricanteDAOTest {
 		}
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void buscar(){
 		Long codigo = 3L;
@@ -46,6 +46,23 @@ public class FabricanteDAOTest {
 			System.out.println("Registro encontrado:");
 			System.out.println(fabricante.getCodigo() + " - " + fabricante.getDescricao());
 		}
+	}
+	
+	//incluindo o merge, é bem parecido com o salvar
+	@Test
+	public void merge() {
+		//merge para criar um fabricante
+		/*Fabricante fabricante = new Fabricante();
+		fabricante.setDescricao("Fabricante B");
+
+		FabricanteDAO fabricanteDAO = new FabricanteDAO();
+		fabricanteDAO.merge(fabricante);*/
+		
+		//merge para editar um fabricante
+		FabricanteDAO fabricanteDAO = new FabricanteDAO();
+		Fabricante fabricante = fabricanteDAO.buscar(1L);
+		fabricante.setDescricao("Fabricante C");
+		fabricanteDAO.merge(fabricante);
 	}
 
 }

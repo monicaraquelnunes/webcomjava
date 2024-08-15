@@ -5,8 +5,8 @@ import java.text.ParseException;
 import java.util.Date;
 import java.util.List;
 
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
+import org.junit.Ignore;
+import org.junit.Test;
 
 import br.pro.delfino.drogaria.domain.Cliente;
 import br.pro.delfino.drogaria.domain.Pessoa;
@@ -15,7 +15,7 @@ import br.pro.delfino.drogaria.domain.Pessoa;
 
 public class ClienteDAOTest {
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void salvar() throws ParseException { //throws ParseException é para Tratamento de erro do (new SimpleDateFormat("dd/MM/yyyy").parse("31/07/2024"), ou seja, não quero tratar caso eu digite a data errado.  
 		PessoaDAO pessoaDAO = new PessoaDAO(); //Pesquisando a chave estrangeira DAO "PessoaDAO"
@@ -37,7 +37,7 @@ public class ClienteDAOTest {
 		System.out.println("Cliente Salvo com Sucesso!");
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void listar() { //163 - desafio "listar" concluído
 		ClienteDAO clienteDAO = new ClienteDAO();
@@ -51,7 +51,7 @@ public class ClienteDAOTest {
 		}
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void buscar() { //163 - desafio "buscar" concluído 
 		Long codigo = 2L;
@@ -65,7 +65,7 @@ public class ClienteDAOTest {
 		System.out.println("Foi liberado? " + cliente.getLiberado());		 
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void excluir() { //163 - desafio "excluir" concluído (esse método é bem parecido com o buscar)
 		Long codigo = 102L;

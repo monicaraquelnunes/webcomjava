@@ -2,15 +2,15 @@ package br.pro.delfino.drogaria.dao;
 
 import java.util.List;
 
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
+import org.junit.Ignore;
+import org.junit.Test;
 
 import br.pro.delfino.drogaria.domain.Cidade;
 import br.pro.delfino.drogaria.domain.Estado;
 
 public class CidadeDAOTest {
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void salvar() { //vídeo 158
 		
@@ -26,7 +26,7 @@ public class CidadeDAOTest {
 		cidadeDAO.salvar(cidade);
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void listar() {
 		CidadeDAO cidadeDAO = new CidadeDAO();
@@ -42,7 +42,7 @@ public class CidadeDAOTest {
 		}
 	}
 
-	@Disabled
+	@Ignore
 	@Test
 	public void buscar() {
 		Long codigo = 1L;
@@ -57,7 +57,7 @@ public class CidadeDAOTest {
 			System.out.println("Nome do Estado: " + cidade.getEstado().getNome());
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void excluir() { //vídeo 160
 		Long codigo = 52L;
@@ -75,7 +75,7 @@ public class CidadeDAOTest {
 		System.out.println("Nome do Estado: " + cidade.getEstado().getNome());
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void editar() { //vídeo 161
 		Long codigoCidade = 3L;

@@ -2,15 +2,15 @@ package br.pro.delfino.drogaria.dao;
 
 import java.util.List;
 
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
+import org.junit.Ignore;
+import org.junit.Test;
 
 import br.pro.delfino.drogaria.domain.Pessoa;
 import br.pro.delfino.drogaria.domain.Usuario;
 
 public class UsuarioDAOTest {
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void salvar() {
 		//pesquisando a chave estrangeira Pessoa
@@ -34,7 +34,7 @@ public class UsuarioDAOTest {
 		System.out.println("Usuario Salvo com Sucesso!");
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void listar() {
 		UsuarioDAO usuarioDAO = new UsuarioDAO();
@@ -48,7 +48,7 @@ public class UsuarioDAOTest {
 		}
 	}
 	
-	@Disabled
+	@Ignore
 	@Test 
 	public void buscar() {
 		Long codigo = 1L;
@@ -63,7 +63,7 @@ public class UsuarioDAOTest {
 		System.out.println("Tipo: " + usuario.getTipo());
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void editar() {
 		Long codigoUsuario = 1L;
@@ -96,6 +96,7 @@ public class UsuarioDAOTest {
 		System.out.println("Tipo: " + usuario.getTipo());	
 	}
 	
+	@Ignore
 	@Test
 	public void excluir() {
 		Long codigo = 2L;

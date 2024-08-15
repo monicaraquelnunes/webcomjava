@@ -2,15 +2,15 @@ package br.pro.delfino.drogaria.dao;
 
 import java.util.List;
 
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
+import org.junit.Ignore;
+import org.junit.Test;
 
 import br.pro.delfino.drogaria.domain.Estado;
 
 
 public class EstadoDAOTest {
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void salvar() {
 		Estado estado = new Estado();
@@ -21,7 +21,7 @@ public class EstadoDAOTest {
 		estadoDAO.salvar(estado);		
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void listar() { //vídeo 153
 		EstadoDAO estadoDAO = new EstadoDAO();
@@ -34,7 +34,7 @@ public class EstadoDAOTest {
 		}
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void buscar() { //vídeo 154
 		Long codigo = 52L;
@@ -50,7 +50,7 @@ public class EstadoDAOTest {
 		}		
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void excluir() { //vídeo 155
 		Long codigo = 1L;		
@@ -66,7 +66,7 @@ public class EstadoDAOTest {
 		}		
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void editar() { //vídeo 156
 		Long codigo = 2L;		

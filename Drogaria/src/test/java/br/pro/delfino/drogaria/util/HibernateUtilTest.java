@@ -1,7 +1,7 @@
 package br.pro.delfino.drogaria.util;
 
 import org.hibernate.Session;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 public class HibernateUtilTest {
 	@Test

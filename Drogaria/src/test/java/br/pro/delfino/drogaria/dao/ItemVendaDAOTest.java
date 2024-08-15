@@ -4,8 +4,8 @@ package br.pro.delfino.drogaria.dao;
 import java.math.BigDecimal;
 import java.util.List;
 
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
+import org.junit.Ignore;
+import org.junit.Test;
 
 import br.pro.delfino.drogaria.domain.Funcionario;
 import br.pro.delfino.drogaria.domain.ItemVenda;
@@ -13,8 +13,7 @@ import br.pro.delfino.drogaria.domain.Produto;
 
 public class ItemVendaDAOTest {
 	
-	@Disabled
-	@SuppressWarnings("removal")
+	@Ignore
 	@Test
 	public void salvar() {
 		ProdutoDAO produtoDAO = new ProdutoDAO();
@@ -36,7 +35,7 @@ public class ItemVendaDAOTest {
 		System.out.println("Item venda cadastrado com Sucesso!");		
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void listar() {
 		ItemVendaDAO itemVendaDAO = new ItemVendaDAO();
@@ -50,7 +49,7 @@ public class ItemVendaDAOTest {
 		}
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void buscar() {
 		Long codigo = 52L;
@@ -64,8 +63,7 @@ public class ItemVendaDAOTest {
 		System.out.println("Funcionário: " + itemVenda.getFuncionario().getCodigo());
 	}
 	
-	@Disabled
-	@SuppressWarnings("removal")
+	@Ignore
 	@Test
 	public void editar() {
 		Long codigoItemVenda = 102L;
@@ -105,7 +103,7 @@ public class ItemVendaDAOTest {
 		System.out.println("Funcionário: " + itemVenda.getFuncionario().getCodigo());			
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void excluir() {
 		Long codigoItemVenda = 102L;

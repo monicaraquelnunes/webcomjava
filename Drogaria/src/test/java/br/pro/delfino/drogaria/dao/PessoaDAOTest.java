@@ -3,16 +3,15 @@ package br.pro.delfino.drogaria.dao;
 
 import java.util.List;
 
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
+import org.junit.Ignore;
+import org.junit.Test;
 
 import br.pro.delfino.drogaria.domain.Cidade;
 import br.pro.delfino.drogaria.domain.Pessoa;
 
 public class PessoaDAOTest { //aula 162 (DESAFIO- criar a classe pessoaDAO): salvar, listar, buscar, editar, excluir
 	
-	@Disabled
-	@SuppressWarnings("removal")
+	@Ignore
 	@Test
 	public void salvar() {
 		
@@ -40,7 +39,7 @@ public class PessoaDAOTest { //aula 162 (DESAFIO- criar a classe pessoaDAO): sal
 		System.out.println("Pessoa Incluída com Sucesso!");
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void listar() { //162 - desafio "listar" concluído
 		
@@ -52,7 +51,7 @@ public class PessoaDAOTest { //aula 162 (DESAFIO- criar a classe pessoaDAO): sal
 		}
 	}
 	
-	@Disabled
+	@Ignore
 	@Test  //162 - desafio "buscar" concluído
 	public void buscar() { 
 		Long codigo = 2L;
@@ -64,7 +63,7 @@ public class PessoaDAOTest { //aula 162 (DESAFIO- criar a classe pessoaDAO): sal
 		System.out.println("O nome da pessoa é: " + pessoa.getNome());
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void editar() { //162 - desafio "editar" a pessoa concluído
 		
@@ -85,7 +84,7 @@ public class PessoaDAOTest { //aula 162 (DESAFIO- criar a classe pessoaDAO): sal
 		System.out.println("Cidade: " + pessoa.getCidade().getNome());		
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void excluir() { //162 - desafio "excluir" o pessoa concluído
 		Long codigo = 3L;

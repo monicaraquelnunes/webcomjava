@@ -1,7 +1,7 @@
 package br.pro.delfino.drogaria.domain;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
+import javax.persistence.Column;
+import javax.persistence.Entity;
 
 
 @SuppressWarnings("serial")

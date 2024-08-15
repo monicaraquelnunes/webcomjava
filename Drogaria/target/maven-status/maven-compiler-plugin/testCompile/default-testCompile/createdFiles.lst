@@ -1,2 +1,11 @@
+br\pro\delfino\drogaria\dao\ItemVendaDAOTest.class
+br\pro\delfino\drogaria\dao\ProdutoDAOTest.class
+br\pro\delfino\drogaria\dao\FuncionarioDAOTest.class
+br\pro\delfino\drogaria\dao\VendaDAOTest.class
+br\pro\delfino\drogaria\dao\PessoaDAOTest.class
 br\pro\delfino\drogaria\dao\EstadoDAOTest.class
+br\pro\delfino\drogaria\dao\CidadeDAOTest.class
+br\pro\delfino\drogaria\dao\UsuarioDAOTest.class
+br\pro\delfino\drogaria\dao\ClienteDAOTest.class
 br\pro\delfino\drogaria\util\HibernateUtilTest.class
+br\pro\delfino\drogaria\dao\FabricanteDAOTest.class

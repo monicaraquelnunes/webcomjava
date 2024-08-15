@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
+import org.junit.Ignore;
+import org.junit.Test;
 
 import br.pro.delfino.drogaria.domain.Cliente;
 import br.pro.delfino.drogaria.domain.Funcionario;
@@ -13,7 +13,7 @@ import br.pro.delfino.drogaria.domain.Venda;
 
 public class VendaDAOTest {
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void salvar() {
 		ClienteDAO clienteDAO = new ClienteDAO();
@@ -34,7 +34,7 @@ public class VendaDAOTest {
 		System.out.println("Venda realizada com Sucesso!");
 	}	
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void listar() {
 		VendaDAO vendaDAO = new VendaDAO();
@@ -45,7 +45,7 @@ public class VendaDAOTest {
 		}
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void buscar() {
 		Long codigo = 2L;
@@ -62,7 +62,7 @@ public class VendaDAOTest {
 				
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void editar() {
 		Long codigoVenda = 2L;
@@ -96,7 +96,7 @@ public class VendaDAOTest {
 		System.out.println("Cliente: " + venda.getCliente().getCodigo());			
 	}
 	
-	@Disabled
+	@Ignore
 	@Test
 	public void excluir() {
 		Long codigoVenda = 52L;
