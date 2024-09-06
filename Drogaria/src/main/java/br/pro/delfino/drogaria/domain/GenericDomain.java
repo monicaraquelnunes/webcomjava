@@ -1,6 +1,7 @@
 package br.pro.delfino.drogaria.domain;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,6 +22,29 @@ public class GenericDomain implements Serializable {  			//Entidade DominioGener
 
 	public void setCodigo(Long codigo) {
 		this.codigo = codigo;
+	}
+	
+	//Código necessário para salvar a tela com a chave estrangeira, que também é necessário no cidades.xhtml em <p:selectOneMenu converter="omnifaces.SelectItemsConverter"
+	@Override
+	public String toString() {
+		return String.format("%s[codigo=%d]", getClass().getSimpleName(), getCodigo());
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(codigo);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		GenericDomain other = (GenericDomain) obj;
+		return Objects.equals(codigo, other.codigo);
 	}
 	
 	

@@ -5,6 +5,7 @@ br\pro\delfino\drogaria\util\HibernateUtil.class
 br\pro\delfino\drogaria\dao\ItemVendaDAO.class
 br\pro\delfino\drogaria\dao\CidadeDAO.class
 br\pro\delfino\drogaria\dao\ProdutoDAO.class
+br\pro\delfino\drogaria\util\HibernateContexto.class
 br\pro\delfino\drogaria\domain\Produto.class
 br\pro\delfino\drogaria\dao\GenericDAO.class
 br\pro\delfino\drogaria\dao\ClienteDAO.class
@@ -14,6 +15,7 @@ br\pro\delfino\drogaria\domain\Fabricante.class
 br\pro\delfino\drogaria\domain\Estado.class
 br\pro\delfino\drogaria\domain\Venda.class
 br\pro\delfino\drogaria\domain\Pessoa.class
+br\pro\delfino\drogaria\bean\CidadeBean.class
 br\pro\delfino\drogaria\bean\EstadoBean.class
 br\pro\delfino\drogaria\dao\UsuarioDAO.class
 br\pro\delfino\drogaria\domain\Cliente.class
