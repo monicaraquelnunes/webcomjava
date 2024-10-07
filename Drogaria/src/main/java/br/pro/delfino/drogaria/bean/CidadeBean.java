@@ -83,7 +83,7 @@ public class CidadeBean implements Serializable {
 		
 		//populando a coleção(lista) de Estados, que é a chave estrangeira
 		EstadoDAO estadoDAO = new EstadoDAO();
-		estados = estadoDAO.listar();
+		estados = estadoDAO.listar("nome");
 		
 		}catch(RuntimeException erro) {
 			Messages.addFlashGlobalError("Ocorreu um erro ao tentar gerar uma nova Cidade!");

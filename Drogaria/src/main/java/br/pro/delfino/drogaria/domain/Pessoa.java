@@ -33,10 +33,10 @@ public class Pessoa extends GenericDomain {
 	@Column(length = 10)
 	private String complemento;
 	
-	@Column(length = 13, nullable = false)
+	@Column(length = 15, nullable = false)
 	private String telefone;
 
-	@Column(length = 14, nullable = false)
+	@Column(length = 15, nullable = false)
 	private String celular;
 	
 	@Column(length = 100, nullable = false)
@@ -47,15 +47,7 @@ public class Pessoa extends GenericDomain {
 	@JoinColumn(nullable = false)
 	private Cidade cidade;
 	
-
-	public Cidade getCidade() {
-		return cidade;
-	}
-
-	public void setCidade(Cidade cidade) {
-		this.cidade = cidade;
-	}
-
+	//Métodos Getter e Setter
 	public String getNome() {
 		return nome;
 	}
@@ -142,6 +134,15 @@ public class Pessoa extends GenericDomain {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+	
+
+	public Cidade getCidade() {
+		return cidade;
+	}
+
+	public void setCidade(Cidade cidade) {
+		this.cidade = cidade;
 	}
 	
 	

@@ -6,6 +6,7 @@ import java.util.List;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 
 import br.pro.delfino.drogaria.util.HibernateUtil;
@@ -60,6 +61,31 @@ public class GenericDAO<Entidade> {
             resultado = q.getResultList();
             transacao.commit(); */
     
+			resultado = consulta.list();
+						
+		}catch (RuntimeException erro) {
+			throw erro;			
+		}finally {
+			sessao.close();
+		}
+		return resultado;
+	}
+	
+	
+	//incluindo um novo método listar para ordenar as listagens
+	@SuppressWarnings("unchecked")
+	public List<Entidade> listar(String campoOrdenacao){
+		Session sessao = HibernateUtil.getFabricaDeSessoes().openSession();
+		
+		@SuppressWarnings("unused")
+		Transaction transacao = null;
+        List<Entidade> resultado = null;
+        
+		try {
+			transacao = sessao.beginTransaction();
+        
+			Criteria consulta = sessao.createCriteria(classe);
+			consulta.addOrder(Order.asc(campoOrdenacao));
 			resultado = consulta.list();
 						
 		}catch (RuntimeException erro) {
