@@ -30,9 +30,20 @@
 	</plugins>
   </build>
   
+  <!-- Repositórios -->
+  <repositories>
+	<!-- PrimeFaces -->
+	<repository>
+		<id>prime-repo</id>
+		<name>PrimeFaces Maven Repository</name>
+		<url>http://repository.primefaces.org</url>
+		<layout>default</layout>
+	</repository>
+  </repositories>
+  
   <!-- Dependências -->
-    <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
- <dependencies>
+  <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
+  <dependencies>
 	<dependency>
 		<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
@@ -67,6 +78,13 @@
 	    <version>5.2</version>
 	</dependency>
 	
+	<!-- Temas do PrimeFaces-->
+	<dependency>
+		<groupId>org.primefaces.themes</groupId>
+		<artifactId>all-themes</artifactId>
+		<version>1.0.10</version>
+	</dependency>
+	
 	<!-- OmniFaces-->
 	<dependency>
 		<groupId>org.omnifaces</groupId>
@@ -81,6 +99,13 @@
 		<version>3.1.0</version>
 	</dependency>
 	
-</dependencies>
+	<!-- Jersey 
+	<dependency>
+		<groupId>org.glassfish.jersey.conteiners</groupId>
+		<artifactId>jersey-conteiner-servlet</artifactId>
+		<version>2.22.1</version>
+	</dependency> -->
+	
+  </dependencies>
   
 </project>
